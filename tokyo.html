@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="back-home">← 返回首頁</a>
+    <header>
+        <h1 class="ur">Explore Tokyo</h1>
+    </header>
+    <main>
+        <section class="cempt">
+            <h4>Introduction</h4>
+            <p class="photo"><img src="" alt=""></p>
+            <p class="text">東京完美融合了現代科技潮流與江戶傳統美學，是一座永遠探索不完的魅力都市。</p>
+        </section>
+        <ul class="box">
+        <li>
+            <a href="#food">
+                <span class="icon">🍱</span>
+                <span class="text">東京美食</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#events">
+                <span class="icon">📅</span>
+                <span class="text">2026活動</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sightseeing">
+                <span class="icon">🗼</span>
+                <span class="text">熱門觀光</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#history">
+                <span class="icon">🏯</span>
+                <span class="text">歷史文化</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+    </ul>
+    <section id="food" class="detin">
+        <h2>🍱 東京美食推薦</h2>
+        <div class="section-content">
+            <div class="slider-container" id="food-slider">
+                <div class="slider-wrapper">
+                    <img src="images/海鮮丼.webp" class="slide active" alt="海鮮丼">
+                    <img src="images/串燒.jpg" class="slide" alt="串燒文化">
+                    <img src="images/六本木.jpg" class="slide" alt="精緻的高級和牛與壽司">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>東京是全球米其林星級餐廳最多的城市之一。來到這裡，你可以在<strong>築地場外市場</strong>品嚐到當天現捕的爆量海鮮丼；走進<strong>新宿回憶橫丁</strong>的居酒屋體驗庶民的串燒文化；或是前往<strong>六本木</strong>享受精緻的高級和牛與壽司。無論是平價拉麵還是頂級饗宴，東京都能完美滿足。</p>
+        </div>
+    </section>
+
+    <section id="events" class="detin">
+        <h2>📅 2026 東京限定活動</h2>
+        <div class="section-content">
+            <div class="slider-container" id="events-slider">
+                <div class="slider-wrapper">
+                    <img src="images/tokyo_spring.webp" class="slide active" alt="隅田公園櫻花祭">
+                    <img src="images/tokyo_summer.png" class="slide" alt="隅田川花火大會">
+                    <img src="images/tokyo_autumn.jpg" class="slide" alt="明治神宮外苑銀杏祭">
+                    <img src="images/tokyo_winter.jpg" class="slide" alt="澀谷青之洞窟點燈">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <ul class="event-list">
+                <li><strong>🌸 春季（3-4月）｜隅田公園櫻花祭：</strong> 2026 年春季，沿著隅田川漫步，一邊欣賞上千株櫻花盛開，一邊與遠處的東京晴空塔同框合影，夜晚還有浪漫的夜櫻點燈。</li>
+                <li><strong>🎆 夏季（7-8月）｜隅田川花火大會：</strong> 作為東京夏季最盛大的傳統煙火祭典，2026 年預計將施放數萬發璀璨煙火，與河面上的傳統屋形船交織成最美夜景。</li>
+                <li><strong>🍁 秋季（11月）｜明治神宮外苑銀杏祭：</strong> 11 月中下旬，外苑兩側高大的銀杏樹會完全染成金黃色，形成一條夢幻的金黃色隧道，非常適合散步街拍。</li>
+                <li><strong>💙 冬季（12月）｜澀谷青之洞窟點燈：</strong> 2026 年底限定，整個澀谷公園通將被數十萬顆藍色 LED 燈泡點亮，打造出宛如冬夜極光般的魔幻藍色祕境。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sightseeing" class="detin">
+        <h2>🗼 熱門觀光景點</h2>
+        <div class="section-content">
+            <div class="slider-container" id="sightseen-slider">
+                <div class="slider-wrapper">
+                    <img src="images/tokyo_s_1.jpg" class="slide active" alt="淺草寺雷門">
+                    <img src="images/tokyo_s_2.webp" class="slide" alt="澀谷十字路口">
+                    <img src="images/tokyo_s_3.webp" class="slide" alt="東京鐵塔">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>初訪東京必去的經典路線！首先到充滿下町情調的<strong>淺草寺雷門</strong>抽一張御籤、漫步仲見世通。接著搭車前往世界的潮流中心<strong>澀谷十字路口</strong>，體驗萬人同時過馬路的震撼。黃昏時分，強烈推薦登上<strong>東京鐵塔</strong>或 <strong>SHIBUYA SKY</strong> 展望台，俯瞰整座東京不知疲倦的絕美夜景。</p>
+        </div>
+    </section>
+
+    <section id="history" class="detin">
+        <h2>🏯 歷史文化介紹</h2>
+        <div class="section-content">
+            <div class="slider-container" id="history-slider">
+                <div class="slider-wrapper">
+                    <img src="images/tokyo_h_1.jpg" class="slide active" alt="皇居外苑">
+                    <img src="images/tokyo_h_2.jpg" class="slide" alt="明治神宮">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>東京的舊稱是「江戶」。自 1603 年德川家康在此設立幕府以來，它便取代了京都，成為日本實質上的政治與文化核心。如今，你可以在現代高樓環抱的<strong>皇居外苑</strong>（舊江戶城遺跡）感受到當年的幕府氣勢，或是走進被繁茂森林包圍的<strong>明治神宮</strong>，在都市喧囂中尋得一抹神聖與寧靜。</p>
+        </div>
+    </section>
+    </main>
+    <script>
+        function moveSlideGen(direction, buttonElement) {
+          
+            const container = buttonElement.closest('.slider-container');
+            if (!container) return;
+
+            const slides = container.querySelectorAll('.slide');
+            if (slides.length === 0) return;
+
+            let currentIndex = -1;
+            for (let i = 0; i < slides.length; i++) {
+                if (slides[i].classList.contains('active')) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+            if (currentIndex === -1) currentIndex = 0;
+
+            slides[currentIndex].classList.remove('active');
+
+            let nextIndex = currentIndex + direction;
+            if (nextIndex >= slides.length) {
+                nextIndex = 0;
+            }
+            if (nextIndex < 0) {
+                nextIndex = slides.length - 1;
+            }
+            slides[nextIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>

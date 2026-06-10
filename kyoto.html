@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="back-home">← 返回首頁</a>
+    <header>
+        <h1 class="ur">Explore Kyoto</h1>
+    </header>
+    <main>
+        <section class="cempt">
+            <h4>Introduction</h4>
+            <p class="photo"><img src="" alt=""></p>
+            <p class="text">京都保留了日本最純粹的古都風情與千年神社文化，是一座讓人慢下腳步、細細品味的歷史都市。</p>
+        </section>
+        <ul class="box">
+        <li>
+            <a href="#food">
+                <span class="icon">🍱</span>
+                <span class="text">京都美食</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#events">
+                <span class="icon">📅</span>
+                <span class="text">2026活動</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sightseeing">
+                <span class="icon">🗼</span>
+                <span class="text">熱門觀光</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#history">
+                <span class="icon">🏯</span>
+                <span class="text">歷史文化</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+    </ul>
+    <section id="food" class="detin">
+        <h2>🍱 京都美食推薦</h2>
+        <div class="section-content">
+            <div class="slider-container" id="food-slider">
+                <div class="slider-wrapper">
+                    <img src="images/kyoto_food_1.jpg" class="slide active" alt="精緻日本懷石料理">
+                    <img src="images/kyoto_food_2.jpg" class="slide" alt="日式傳統和菓子與焙茶">
+                    <img src="images/kyoto_food_3.jpg" class="slide" alt="道地宇治抹茶蕎麥麵">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>京則是日本傳統文化的殿堂，其飲食美學更是不容錯過。來到這裡，你必須品嚐一次最頂級的<strong>懷石料理</strong>，感受隨季節變換的精緻器皿與食材。此外，前往清水寺沿途的傳統茶屋，享用一份精緻細膩的<strong>日式傳統和菓子</strong>、或是來一碗茶香四溢的<strong>宇治抹茶蕎麥麵</strong>，都能讓你在古色古香的氛圍中品味到純粹的京都風情。</p>
+        </div>
+    </section>
+
+    <section id="events" class="detin">
+        <h2>📅 2026 京都限定活動</h2>
+        <div class="section-content">
+            <div class="slider-container" id="events-slider">
+                <div class="slider-wrapper">
+                    <img src="images/kyoto_spring.webp" class="slide active" alt="清水寺夜櫻點燈">
+                    <img src="images/kyoto_summer.jpg" class="slide" alt="祇園祭山鉾巡行">
+                    <img src="images/kyoto_autumn.webp" class="slide" alt="永觀堂紅葉點燈">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <ul class="event-list">
+                <li><strong>🌸 春季｜清水寺夜間特別拜觀：</strong> 2026 年春天，著名的清水舞台將在夜間開放，粉嫩的櫻花在柔和的光雕下綻放，與京都夜景交織成絕美的魔幻時刻。</li>
+                <li><strong>🏮 夏季｜京都祇園祭：</strong> 作為日本三大祭典之一，2026 年 7 月將迎來最壯觀的「山鉾巡行」，巨大的傳統神轎在古老街道上遊行，整個京都市區會充滿熱鬧的笛鼓聲。</li>
+                <li><strong>🍁 秋季｜永觀堂紅葉點燈：</strong> 到了 11 月賞楓旺季，被譽為「紅葉永觀堂」的神社將點亮燈火，倒映在放生池上的火紅楓葉，是秋天最奢華的視覺盛宴。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sightseeing" class="detin">
+        <h2>🗼 熱門觀光景點</h2>
+        <div class="section-content">
+            <div class="slider-container" id="sightseen-slider">
+                <div class="slider-wrapper">
+                    <img src="images/kyoto_s_1.webp" class="slide active" alt="閃耀的金閣寺">
+                    <img src="images/kyoto_s_2.webp" class="slide" alt="伏見稻荷大社千本鳥居">
+                    <img src="images/kyoto_s_3.webp" class="slide" alt="嵐山竹林小徑">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>初訪京都的經典朝盛路線！首先是閃耀著金色光芒的<strong>金閣寺</strong>（鹿苑寺），倒映在鏡湖池上的畫面宛如畫作。接著前往擁有上千座朱紅色鳥居的<strong>伏見稻荷大社</strong>，漫步在千本鳥居隧道中，感受神秘的神社氛圍。最後，若還有時間，絕對不能錯過充滿禪意的<strong>嵐山竹林小徑</strong>。</p>
+        </div>
+    </section>
+
+    <section id="history" class="detin">
+        <h2>🏯 歷史文化介紹</h2>
+        <div class="section-content">
+            <div class="slider-container" id="history-slider">
+                <div class="slider-wrapper">
+                    <img src="images/kyoto_h_1.jpg" class="slide active" alt="穿著和服漫步祇園">
+                    <img src="images/kyoto_h_2.webp" class="slide" alt="清水寺木造舞台">
+                    <img src="images/kyoto_h_3.webp" class="slide" alt="傳統茶道體驗">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>京都擁有超過千年的建都歷史，自 794 年桓武天皇遷都平安京以來，這裡長期作為日本的首都與靈魂核心。漫步在<strong>祇園花見小路</strong>的石板路上，你有機會與身穿傳統和服、步履匆匆的藝妓擦身而過。在這裡換上一套<strong>傳統和服</strong>、體驗茶道文化，最能深刻體會江戶時代留下來的雅致底蘊。</p>
+        </div>
+    </section>
+    </main>
+    <script>
+        function moveSlideGen(direction, buttonElement) {
+          
+            const container = buttonElement.closest('.slider-container');
+            if (!container) return;
+
+            const slides = container.querySelectorAll('.slide');
+            if (slides.length === 0) return;
+
+            let currentIndex = -1;
+            for (let i = 0; i < slides.length; i++) {
+                if (slides[i].classList.contains('active')) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+            if (currentIndex === -1) currentIndex = 0;
+
+            slides[currentIndex].classList.remove('active');
+
+            let nextIndex = currentIndex + direction;
+            if (nextIndex >= slides.length) {
+                nextIndex = 0;
+            }
+            if (nextIndex < 0) {
+                nextIndex = slides.length - 1;
+            }
+            slides[nextIndex].classList.add('active');
+        }
+    </script>
+</body>
+</body>
+</html>

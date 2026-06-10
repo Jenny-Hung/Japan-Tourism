@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="back-home">← 返回首頁</a>
+    <header>
+        <h1 class="ur">Explore Osaka</h1>
+    </header>
+    <main>
+        <section class="cempt">
+            <h4>Introduction</h4>
+            <p class="photo"><img src="" alt=""></p>
+            <p class="text">大阪是一座充滿熱情活力與庶民美食的娛樂之都，隨處可見繽紛霓虹燈與令人垂涎的道地小吃。</p>
+        </section>
+        <ul class="box">
+        <li>
+            <a href="#food">
+                <span class="icon">🍱</span>
+                <span class="text">大阪美食</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#events">
+                <span class="icon">📅</span>
+                <span class="text">2026活動</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#sightseeing">
+                <span class="icon">🗼</span>
+                <span class="text">熱門觀光</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+        <li>
+            <a href="#history">
+                <span class="icon">🏯</span>
+                <span class="text">歷史文化</span>
+                <span class="arrow">〉</span>
+            </a>
+        </li>
+    </ul>
+    <section id="food" class="detin">
+        <h2>🐙 大阪美食推薦</h2>
+        <div class="section-content">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <img src="images/osaka_food_1.jpeg" class="slide active" alt="經典大阪燒">
+                    <img src="images/osaka_food_2.webp" class="slide" alt="道地章魚燒">
+                    <img src="images/osaka_food_3.webp" class="slide" alt="酥脆炸串">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>大阪被譽為「日本的廚房」，豐富的平民美食絕對讓你吃到飽！來到這裡，你必須品嚐最經典的<strong>大阪燒</strong>，高麗菜與麵糊在鐵板上滋滋作響，淋上特製醬汁與柴魚片，香氣四溢。此外，道頓堀街頭必吃的<strong>章魚燒</strong>，外酥內軟、口感濃郁；還有外皮酥脆、沾醬只能沾一次的<strong>元祖炸串</strong>，都是靈魂美食。</p>
+        </div>
+    </section>
+
+    <section id="events" class="detin">
+        <h2>📅 2026 大阪限定活動</h2>
+        <div class="section-content">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <img src="images/osaka_spring.webp" class="slide active" alt="大阪城公園櫻花季">
+                    <img src="images/osaka_summer.webp" class="slide" alt="天神祭奉納花火">
+                    <img src="images/osaka_winter.webp" class="slide" alt="御堂筋光之饗宴">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <ul class="event-list">
+                <li><strong>🌸 春季｜大阪城櫻花祭：</strong> 2026 年春天，大阪城天守閣將被上千株染井吉野櫻包圍，夜晚還會有點燈活動，古城與夜櫻交織，氣勢磅礴。</li>
+                <li><strong>🏮 夏季｜天神祭奉納花火：</strong> 作為日本三大祭典之一，7 月底將迎來高潮，上百艘神輿船在河流上巡航，搭配夜空中綻放的萬發煙火，熱鬧非凡。</li>
+                <li><strong>✨ 冬季｜御堂筋光之饗宴：</strong> 到了年末，大阪最主要的街道「御堂筋」將化身成全長數公里的璀璨燈海，獲得金氏世界紀錄的炫目燈光陪你浪漫過冬。</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sightseeing" class="detin">
+        <h2>🗼 熱門觀光景點</h2>
+        <div class="section-content">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <img src="images/osaka_s_1.jpg" class="slide active" alt="日本環球影城">
+                    <img src="images/osaka_s_2.jpg" class="slide" alt="道頓堀跑跑人">
+                    <img src="images/osaka_s_3.webp" class="slide" alt="梅田藍天大廈展望台">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>大阪的觀光充滿活力與歡樂！大人小孩都瘋狂的<strong>日本環球影城 (USJ)</strong>，帶你進入哈利波特與任天堂的魔法世界。接著來到最熱鬧的<strong>道頓堀與心齋橋</strong>，跟巨大的固力果跑跑人招牌合照。傍晚時分，登上<strong>梅田藍天大廈</strong>的空中庭園展望台，飽覽 360 度的璀璨大阪百萬夜景。</p>
+        </div>
+    </section>
+
+    <section id="history" class="detin">
+        <h2>🏯 歷史文化介紹</h2>
+        <div class="section-content">
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <img src="images/osaka_h_1.webp" class="slide active" alt="雄偉的大阪城天守閣">
+                    <img src="images/osaka_h_2.webp" class="slide" alt="古老四天王寺">
+                    <img src="images/osaka_h_3.webp" class="slide" alt="傳統文樂木偶劇">
+                </div>
+                <button class="slider-btn prev-btn" onclick="moveSlideGen(-1, this)">❮</button>
+                <button class="slider-btn next-btn" onclick="moveSlideGen(1, this)">❯</button>
+            </div>
+            <p>與優雅的京都不同，大阪（古稱大坂）自古以來便是繁榮的「商業之都」。1583 年戰國梟雄豐臣秀吉建造了雄偉的<strong>大阪城</strong>，成為當時日本的政治核心。漫步在全日本最古老的官寺<strong>四天王寺</strong>，能感受到飛鳥時代的建築美學。這裡培育出獨特的「商人文化」與傳統人形劇（文樂），展現出極具生命力的歷史底蘊。</p>
+        </div>
+    </section>
+    </main>
+<script>
+        function moveSlideGen(direction, buttonElement) {
+          
+            const container = buttonElement.closest('.slider-container');
+            if (!container) return;
+
+            const slides = container.querySelectorAll('.slide');
+            if (slides.length === 0) return;
+
+            let currentIndex = -1;
+            for (let i = 0; i < slides.length; i++) {
+                if (slides[i].classList.contains('active')) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+            if (currentIndex === -1) currentIndex = 0;
+
+            slides[currentIndex].classList.remove('active');
+
+            let nextIndex = currentIndex + direction;
+            if (nextIndex >= slides.length) {
+                nextIndex = 0;
+            }
+            if (nextIndex < 0) {
+                nextIndex = slides.length - 1;
+            }
+            slides[nextIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
