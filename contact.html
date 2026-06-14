@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html" class="back-home">← 返回首頁</a>
+    <header>
+        </header>
+
+    <main>
+        <section class="detin contact-simple-section">
+            <h2>✉️ Contact us</h2>
+            
+            <form class="contact-simple-form" action="#" method="POST" onsubmit="alert('訊息已成功模擬送出！'); return false;">
+                
+                <div class="form-group">
+                    <label for="username">您的姓名 / Name</label>
+                    <input type="text" id="username" name="username" placeholder="例如：珍妮小姐" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">電子信箱 / Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">留言內容 / Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="請輸入您想對我們說的話..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">submit</button>
+            </form>
+            
+        </section>
+    </main>
+</body>
+</html>
